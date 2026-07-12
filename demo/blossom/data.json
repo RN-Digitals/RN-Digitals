@@ -1,0 +1,21 @@
+{
+  "mempelaiPria": {
+    "namaLengkap": "Dimas Prasetyo, S.E",
+    "namaPanggilan": "Dimas",
+    "putraDari": "Putra kedua dari Bapak H. Heri Susanto & Ibu Hj. Endang"
+  },
+  "mempelaiWanita": {
+    "namaLengkap": "Amelia Putri, S.Pd",
+    "namaPanggilan": "Amel",
+    "putriDari": "Putri pertama dari Bapak Drs. M. Yusuf & Ibu Yulianti"
+  },
+  "acara": {
+    "tanggal": "Minggu, 13 Desember 2026",
+    "jamAkad": "08.00 - 10.00 WIB",
+    "jamResepsi": "11.00 - 15.00 WIB",
+    "lokasi": "Taman Bunga Convention Hall",
+    "alamat": "Jl. Dahlia No. 12, Purwakarta",
+    "mapsUrl": "https://maps.google.com"
+  }
+}
+
