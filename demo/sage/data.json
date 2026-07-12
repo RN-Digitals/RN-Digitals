@@ -1,0 +1,20 @@
+{
+  "mempelaiPria": {
+    "namaLengkap": "Budi Santoso, S.Kom",
+    "namaPanggilan": "Budi",
+    "putraDari": "Putra pertama dari Bapak Ahmad & Ibu Siti"
+  },
+  "mempelaiWanita": {
+    "namaLengkap": "Rani Wijaya, S.E",
+    "namaPanggilan": "Rani",
+    "putriDari": "Putri kedua dari Bapak Iwan & Ibu Sri"
+  },
+  "acara": {
+    "tanggal": "Minggu, 17 Agustus 2026",
+    "jamAkad": "08.00 - 10.00 WIB",
+    "jamResepsi": "11.00 - 14.00 WIB",
+    "lokasi": "Gedung Serbaguna Cantika",
+    "alamat": "Jl. Flamboyan No. 45, Purwakarta",
+    "mapsUrl": "https://maps.google.com"
+  }
+}
