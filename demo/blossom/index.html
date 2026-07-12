@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Sweet Blossom</title>
+    
+    <!-- Google Fonts untuk nuansa Anggun & Manis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Pilihan Warna Tema Sweet Blossom */
+        :root {
+            --bg-blossom: #fff5f5;
+            --pink-soft: #ffe3e3;
+            --pink-dark: #e5989b;
+            --pink-deep: #b56576;
+            --text-dark: #6d5959;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: var(--pink-soft);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 450px;
+            background-color: var(--white);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(181, 101, 118, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Ornamen Bunga Cat Air di Sudut (Efek CSS Lingkaran Lembut) */
+        .wrapper::before {
+            content: "🌸";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 80px;
+            opacity: 0.15;
+        }
+
+        .wrapper::after {
+            content: "🌸";
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            font-size: 80px;
+            opacity: 0.15;
+        }
+
+        /* Hero / Cover Section */
+        .hero {
+            padding: 80px 20px 60px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #fff0f0 0%, #ffffff 100%);
+        }
+
+        .hero p {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--pink-dark);
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 55px;
+            font-weight: 400;
+            color: var(--pink-deep);
+            margin: 10px 0;
+        }
+
+        /* Section Mempelai */
+        .mempelai-section {
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .mempelai-box h2 {
+            font-family: 'Sacramento', cursive;
+            font-size: 42px;
+            font-weight: 600;
+            color: var(--pink-deep);
+            margin-bottom: 0px;
+        }
+
+        .mempelai-box p {
+            font-size: 13px;
+            color: #8c7474;
+            margin-top: 5px;
+        }
+
+        .ampersand {
+            font-family: 'Great Vibes', cursive;
+            font-size: 40px;
+            color: var(--pink-dark);
+            margin: 15px 0;
+        }
+
+        /* Section Acara */
+        .acara-section {
+            background-color: var(--bg-blossom);
+            padding: 40px 30px;
+            margin: 20px;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px dashed var(--pink-dark);
+        }
+
+        .acara-section h3 {
+            font-family: 'Sacramento', cursive;
+            font-size: 36px;
+            color: var(--pink-deep);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .card-acara {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(181, 101, 118, 0.05);
+        }
+
+        .card-acara h4 {
+            margin: 0 0 10px 0;
+            color: var(--pink-deep);
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .card-acara p {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+
+        /* Button Peta Cantik */
+        .btn-maps {
+            display: inline-block;
+            background-color: var(--pink-deep);
+            color: var(--white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(181, 101, 118, 0.2);
+        }
+
+        .btn-maps:hover {
+            background-color: var(--pink-dark);
+            box-shadow: 0 4px 15px rgba(181, 101, 118, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 11px;
+            color: var(--pink-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- HERO COVER -->
+        <section class="hero">
+            <p>The Wedding of</p>
+            <h1 id="title-nama">Loading...</h1>
+            <p id="title-tanggal" style="margin-top: 20px; font-weight: 500; letter-spacing: 1px;"></p>
+        </section>
+
+        <!-- DATA MEMPELAI -->
+        <section class="mempelai-section">
+            <div class="mempelai-box">
+                <h2 id="pria-nama">Mempelai Pria</h2>
+                <p id="pria-ortu">-</p>
+            </div>
+            
+            <div class="ampersand">dan</div>
+            
+            <div class="mempelai-box">
+                <h2 id="wanita-nama">Mempelai Wanita</h2>
+                <p id="wanita-ortu">-</p>
+            </div>
+        </section>
+
+        <!-- DETAIL ACARA -->
+        <section class="acara-section">
+            <h3>Save the Date</h3>
+            
+            <div class="card-acara">
+                <h4>Akad Nikah</h4>
+                <p id="acara-jam-akad">-</p>
+            </div>
+
+            <div class="card-acara">
+                <h4>Resepsi Pernikahan</h4>
+                <p id="acara-jam-resepsi">-</p>
+            </div>
+
+            <div class="card-acara">
+                <h4>Lokasi Kebahagiaan</h4>
+                <p><strong id="acara-lokasi" style="color: var(--pink-deep); font-size: 15px;">-</strong></p>
+                <p id="acara-alamat">-</p>
+                <a id="link-maps" href="#" target="_blank" class="btn-maps">💖 Buka Petunjuk Lokasi</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created by RN-Digitals With Love</p>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('title-nama').innerText = `${data.mempelaiPria.namaPanggilan} & ${data.mempelaiWanita.namaPanggilan}`;
+                document.getElementById('title-tanggal').innerText = data.acara.tanggal;
+
+                document.getElementById('pria-nama').innerText = data.mempelaiPria.namaLengkap;
+                document.getElementById('pria-ortu').innerText = data.mempelaiPria.putraDari;
+
+                document.getElementById('wanita-nama').innerText = data.mempelaiWanita.namaLengkap;
+                document.getElementById('wanita-ortu').innerText = data.mempelaiWanita.putriDari;
+
+                document.getElementById('acara-jam-akad').innerText = data.acara.jamAcad;
+                document.getElementById('acara-jam-resepsi').innerText = data.acara.jamResepsi;
+                document.getElementById('acara-lokasi').innerText = data.acara.lokasi;
+                document.getElementById('acara-alamat').innerText = data.acara.alamat;
+                
+                document.getElementById('link-maps').href = data.acara.mapsUrl;
+            })
+            .catch(error => console.error('Gagal mengambil data undangan:', error));
+    </script>
+</body>
+</html>
