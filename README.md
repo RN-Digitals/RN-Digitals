@@ -28,6 +28,7 @@ Silakan klik link di bawah ini untuk melihat contoh tampilan undangan (buka lewa
 *   👉 **[LIHAT DEMO: Sage Minimalist](https://rn-digitals.github.io/demo/sage/)** *(Modern, Clean & Fresh)*
 *   👉 **[LIHAT DEMO: Warm Rustic](https://rn-digitals.github.io/demo/rustic/)** *(Earth Tone & Aesthetic)*
 *   👉 **[LIHAT DEMO: Royal Navy & Gold](https://rn-digitals.github.io/demo/navy/)** *(Mewah & Formal)*
+*   👉 **[LIHAT DEMO: Sweet Blossom](https://rn-digitals.github.io/demo/blossom/)** *(Floral & Feminine)*
 
 ---
 
